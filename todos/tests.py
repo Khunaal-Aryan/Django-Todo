@@ -9,7 +9,7 @@ class TodoModelTest(TestCase):
 
     def test_default_completion(self):
         todo = Todo(title="Task")
-        self.assertFalse(todo.completed)
+        self.assertFalse(todo.isCompleted)
 
 class TodoViewTest(TestCase):
     def setUp(self):
